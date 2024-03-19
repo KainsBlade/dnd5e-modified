@@ -2063,52 +2063,52 @@ preLocalize("spellTags", { keys: ["label", "abbr"] });
  * @enum {SpellSchoolConfiguration}
  */
 DND5E.spellSchools = {
-  bld: {
-    label: "Blood Magic",
+  abj: {
+    label: "DND5E.SchoolAbj",
     icon: "systems/dnd5e/icons/svg/schools/abjuration.svg",
-    fullKey: "BloodMagic",
+    fullKey: "abjuration",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.849AYEWw9FHD6JNz"
   },
-  sit: {
-    label: "The Sight",
+  con: {
+    label: "DND5E.SchoolCon",
     icon: "systems/dnd5e/icons/svg/schools/conjuration.svg",
-    fullKey: "TheSight",
+    fullKey: "conjuration",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.TWyKMhZJZGqQ6uls"
   },
-  pyr: {
-    label: "Pyrokinesis",
+  div: {
+    label: "DND5E.SchoolDiv",
     icon: "systems/dnd5e/icons/svg/schools/divination.svg",
-    fullKey: "Pyrokinesis",
+    fullKey: "divination",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.HoD2MwzmVbMqj9se"
   },
-  sha: {
-    label: "Shadow Binding",
+  enc: {
+    label: "DND5E.SchoolEnc",
     icon: "systems/dnd5e/icons/svg/schools/enchantment.svg",
-    fullKey: "Shadowbinding",
+    fullKey: "enchantment",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.SehPXk24ySBVOwCZ"
   },
-  Vly: {
-    label: "Valyrian Magic",
+  evo: {
+    label: "DND5E.SchoolEvo",
     icon: "systems/dnd5e/icons/svg/schools/evocation.svg",
-    fullKey: "Valyrian",
+    fullKey: "evocation",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.kGp1RNuxL2SELLRC"
   },
-  wat: {
-    label: "Water Magic",
+  ill: {
+    label: "DND5E.SchoolIll",
     icon: "systems/dnd5e/icons/svg/schools/illusion.svg",
-    fullKey: "Water",
+    fullKey: "illusion",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.smEk7kvVyslFozrB"
   },
   nec: {
     label: "DND5E.SchoolNec",
     icon: "systems/dnd5e/icons/svg/schools/necromancy.svg",
-    fullKey: "Necromancy",
+    fullKey: "necromancy",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.W0eyiV1FBmngb6Qh"
   },
-  wrg: {
-    label: "Warging",
+  trs: {
+    label: "DND5E.SchoolTrs",
     icon: "systems/dnd5e/icons/svg/schools/transmutation.svg",
-    fullKey: "Warging",
+    fullKey: "transmutation",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IYWewSailtmv6qEb"
   }
 };
@@ -2539,22 +2539,40 @@ DND5E.languages = {
     label: "DND5E.LanguagesStandard",
     children: {
       common: "DND5E.LanguagesCommon",
-      valyrian: "Valyrian",
-      dothraki: "Dothraki",
-      lhazar: "Lhazar",
-      qarth: "Qarth",
-      ashaii: "Ashaii"
+      dwarvish: "DND5E.LanguagesDwarvish",
+      elvish: "DND5E.LanguagesElvish",
+      giant: "DND5E.LanguagesGiant",
+      gnomish: "DND5E.LanguagesGnomish",
+      goblin: "DND5E.LanguagesGoblin",
+      halfling: "DND5E.LanguagesHalfling",
+      orc: "DND5E.LanguagesOrc"
     }
   },
   exotic: {
     label: "DND5E.LanguagesExotic",
     children: {
-      giant: "Giant",
-      demonic: "Demonic",
+      aarakocra: "DND5E.LanguagesAarakocra",
+      abyssal: "DND5E.LanguagesAbyssal",
+      celestial: "DND5E.LanguagesCelestial",
+      deep: "DND5E.LanguagesDeepSpeech",
       draconic: "DND5E.LanguagesDraconic",
-      sylvan: "DND5E.LanguagesSylvan"
+      gith: "DND5E.LanguagesGith",
+      gnoll: "DND5E.LanguagesGnoll",
+      infernal: "DND5E.LanguagesInfernal",
+      primordial: {
+        label: "DND5E.LanguagesPrimordial",
+        children: {
+          aquan: "DND5E.LanguagesAquan",
+          auran: "DND5E.LanguagesAuran",
+          ignan: "DND5E.LanguagesIgnan",
+          terran: "DND5E.LanguagesTerran"
+        }
+      },
+      sylvan: "DND5E.LanguagesSylvan",
+      undercommon: "DND5E.LanguagesUndercommon"
     }
   },
+  druidic: "DND5E.LanguagesDruidic",
   cant: "DND5E.LanguagesThievesCant"
 };
 preLocalize("languages", { key: "label" });
