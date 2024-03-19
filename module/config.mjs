@@ -62,18 +62,20 @@ DND5E.abilities = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.WzWWcTIppki35YvF",
     defaults: { vehicle: 0 }
   },
-  wil: {
-    label: "Wil",
-    abbreviation: "Will",
+  wis: {
+    label: "DND5E.AbilityWis",
+    abbreviation: "DND5E.AbilityWisAbbr",
     type: "mental",
-    fullKey: "willpower",
+    fullKey: "wisdom",
+    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.v3IPyTtqvXqN934s",
     defaults: { vehicle: 0 }
   },
-  mag: {
-    label: "Mag",
-    abbreviation: "Magic",
+  cha: {
+    label: "DND5E.AbilityCha",
+    abbreviation: "DND5E.AbilityChaAbbr",
     type: "mental",
-    fullKey: "magic",
+    fullKey: "charisma",
+    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9FyghudYFV5QJOuG",
     defaults: { vehicle: 0 }
   },
   hon: {
@@ -81,7 +83,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityHonAbbr",
     type: "mental",
     fullKey: "honor",
-    defaults: { npc: "wil", vehicle: 0 },
+    defaults: { npc: "cha", vehicle: 0 },
     improvement: false
   },
   san: {
@@ -89,7 +91,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilitySanAbbr",
     type: "mental",
     fullKey: "sanity",
-    defaults: { npc: "con", vehicle: 0 },
+    defaults: { npc: "wis", vehicle: 0 },
     improvement: false
   }
 };
