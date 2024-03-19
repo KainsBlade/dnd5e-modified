@@ -1401,20 +1401,30 @@ preLocalize("lootTypes", { key: "label" });
  * @enum {CurrencyConfiguration}
  */
 DND5E.currencies = {
-  dp: {
-    label: "Dragon Coins",
-    abbreviation: "Dragon",
+  pp: {
+    label: "DND5E.CurrencyPP",
+    abbreviation: "DND5E.CurrencyAbbrPP",
+    conversion: 0.1
+  },
+  gp: {
+    label: "DND5E.CurrencyGP",
+    abbreviation: "DND5E.CurrencyAbbrGP",
     conversion: 1
   },
-  mp: {
-    label: "Moon Coins",
-    abbreviation: "Moon",
-    conversion: 100
+  ep: {
+    label: "DND5E.CurrencyEP",
+    abbreviation: "DND5E.CurrencyAbbrEP",
+    conversion: 2
   },
-  pp: {
-    label: "Penny Coins",
-    abbreviation: "Penny",
-    conversion: 10000
+  sp: {
+    label: "DND5E.CurrencySP",
+    abbreviation: "DND5E.CurrencyAbbrSP",
+    conversion: 10
+  },
+  cp: {
+    label: "DND5E.CurrencyCP",
+    abbreviation: "DND5E.CurrencyAbbrCP",
+    conversion: 100
   }
 };
 preLocalize("currencies", { keys: ["label", "abbreviation"] });
@@ -1429,9 +1439,9 @@ preLocalize("currencies", { keys: ["label", "abbreviation"] });
  * @enum {string}
  */
 DND5E.physicalDamageTypes = {
-  blunt: "Blunt",
-  blade: "Blade",
-  projectile: "Projectile"
+  bludgeoning: "DND5E.DamageBludgeoning",
+  piercing: "DND5E.DamagePiercing",
+  slashing: "DND5E.DamageSlashing"
 };
 preLocalize("physicalDamageTypes", { sort: true });
 
@@ -1457,34 +1467,39 @@ DND5E.damageTypes = {
     icon: "systems/dnd5e/icons/svg/damage/acid.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IQhbKRPe1vCPdh8v"
   },
-  blunt: {
-    label: "Blunt",
+  bludgeoning: {
+    label: "DND5E.DamageBludgeoning",
     icon: "systems/dnd5e/icons/svg/damage/bludgeoning.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.39LFrlef94JIYO8m"
   },
-  ice: {
-    label: "Ice",
+  cold: {
+    label: "DND5E.DamageCold",
     icon: "systems/dnd5e/icons/svg/damage/cold.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4xsFUooHDEdfhw6g"
   },
   fire: {
-    label: "Fire",
+    label: "DND5E.DamageFire",
     icon: "systems/dnd5e/icons/svg/damage/fire.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.f1S66aQJi4PmOng6"
+  },
+  force: {
+    label: "DND5E.DamageForce",
+    icon: "systems/dnd5e/icons/svg/damage/force.svg",
+    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.eFTWzngD8dKWQuUR"
   },
   lightning: {
     label: "DND5E.DamageLightning",
     icon: "systems/dnd5e/icons/svg/damage/lightning.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9SaxFJ9bM3SutaMC"
   },
-  shadow: {
-    label: "Shadow",
+  necrotic: {
+    label: "DND5E.DamageNecrotic",
     icon: "systems/dnd5e/icons/svg/damage/acid.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.klOVUV5G1U7iaKoG"
   },
-  projectile: {
-    label: "Projectile",
+  piercing: {
+    label: "DND5E.DamagePiercing",
     icon: "systems/dnd5e/icons/svg/damage/piercing.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.95agSnEGTdAmKhyC"
@@ -1499,18 +1514,23 @@ DND5E.damageTypes = {
     icon: "systems/dnd5e/icons/svg/damage/psychic.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.YIKbDv4zYqbE5teJ"
   },
-  light: {
-    label: "Light",
+  radiant: {
+    label: "DND5E.DamageRadiant",
     icon: "systems/dnd5e/icons/svg/damage/radiant.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.5tcK9buXWDOw8yHH"
   },
- blade: {
-    label: "Blade",
+  slashing: {
+    label: "DND5E.DamageSlashing",
     icon: "systems/dnd5e/icons/svg/damage/slashing.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.sz2XKQ5lgsdPEJOa"
   },
-};  
+  thunder: {
+    label: "DND5E.DamageThunder",
+    icon: "systems/dnd5e/icons/svg/damage/thunder.svg",
+    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.iqsmMHk7FSpiNkQy"
+  }
+};
 patchConfig("damageTypes", "label", { since: "DnD5e 3.0", until: "DnD5e 3.2" });
 preLocalize("damageTypes", { keys: ["label"], sort: true });
 
