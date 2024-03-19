@@ -1313,7 +1313,7 @@ DND5E.validProperties = {
     "rch",
     "rel",
     "ret",
-    "sil",
+    "obs",
     "spc",
     "thr",
     "two",
