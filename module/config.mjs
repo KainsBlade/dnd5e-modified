@@ -62,7 +62,7 @@ DND5E.abilities = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.WzWWcTIppki35YvF",
     defaults: { vehicle: 0 }
   },
-   wis: {
+  wis: {
     label: "DND5E.AbilityWis",
     abbreviation: "DND5E.AbilityWisAbbr",
     type: "mental",
