@@ -62,20 +62,18 @@ DND5E.abilities = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.WzWWcTIppki35YvF",
     defaults: { vehicle: 0 }
   },
-  wis: {
-    label: "DND5E.AbilityWis",
-    abbreviation: "DND5E.AbilityWisAbbr",
+  wil: {
+    label: "DND5E.AbilityWil",
+    abbreviation: "Will",
     type: "mental",
-    fullKey: "wisdom",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.v3IPyTtqvXqN934s",
+    fullKey: "willpower",
     defaults: { vehicle: 0 }
   },
-  cha: {
-    label: "DND5E.AbilityCha",
-    abbreviation: "DND5E.AbilityChaAbbr",
+  mag: {
+    label: "DND5E.AbilityMag",
+    abbreviation: "Magic",
     type: "mental",
-    fullKey: "charisma",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9FyghudYFV5QJOuG",
+    fullKey: "magic",
     defaults: { vehicle: 0 }
   },
   hon: {
@@ -135,14 +133,14 @@ DND5E.skills = {
   },
   ani: {
     label: "DND5E.SkillAni",
-    ability: "wis",
+    ability: "wil",
     fullKey: "animalHandling",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.xb3MCjUvopOU4viE",
     icon: "icons/environment/creatures/horse-brown.webp"
   },
   arc: {
     label: "DND5E.SkillArc",
-    ability: "int",
+    ability: "mag",
     fullKey: "arcana",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.h3bYSPge8IOqne1N",
     icon: "icons/sundries/books/book-embossed-jewel-silver-green.webp"
@@ -156,7 +154,7 @@ DND5E.skills = {
   },
   dec: {
     label: "DND5E.SkillDec",
-    ability: "cha",
+    ability: "int",
     fullKey: "deception",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
     icon: "icons/magic/control/mouth-smile-deception-purple.webp"
@@ -170,14 +168,14 @@ DND5E.skills = {
   },
   ins: {
     label: "DND5E.SkillIns",
-    ability: "wis",
+    ability: "int",
     fullKey: "insight",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.8R5SMbAGbECNgO8z",
     icon: "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
   },
   itm: {
     label: "DND5E.SkillItm",
-    ability: "cha",
+    ability: "str",
     fullKey: "intimidation",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4VHHI2gJ1jEsppfg",
     icon: "icons/skills/social/intimidation-impressing.webp"
@@ -191,35 +189,21 @@ DND5E.skills = {
   },
   med: {
     label: "DND5E.SkillMed",
-    ability: "wis",
+    ability: "int",
     fullKey: "medicine",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.GeYmM7BVfSCAga4o",
     icon: "icons/tools/cooking/mortar-herbs-yellow.webp"
   },
-  nat: {
-    label: "DND5E.SkillNat",
-    ability: "int",
-    fullKey: "nature",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ueMx3uF2PQlcye31",
-    icon: "icons/magic/nature/plant-sprout-snow-green.webp"
-  },
   prc: {
     label: "DND5E.SkillPrc",
-    ability: "wis",
+    ability: "wil",
     fullKey: "perception",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.zjEeHCUqfuprfzhY",
     icon: "icons/magic/perception/eye-ringed-green.webp"
   },
-  prf: {
-    label: "DND5E.SkillPrf",
-    ability: "cha",
-    fullKey: "performance",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.hYT7Z06yDNBcMtGe",
-    icon: "icons/tools/instruments/lute-gold-brown.webp"
-  },
   per: {
     label: "DND5E.SkillPer",
-    ability: "cha",
+    ability: "int",
     fullKey: "persuasion",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4R5H8iIsdFQTsj3X",
     icon: "icons/skills/social/diplomacy-handshake.webp"
@@ -247,7 +231,7 @@ DND5E.skills = {
   },
   sur: {
     label: "DND5E.SkillSur",
-    ability: "wis",
+    ability: "con",
     fullKey: "survival",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.t3EzDU5b9BVAIEVi",
     icon: "icons/magic/fire/flame-burning-campfire-yellow-blue.webp"
@@ -1198,8 +1182,8 @@ preLocalize("featureTypes.supernaturalGift.subtypes", { sort: true });
  * @enum {ItemPropertyConfiguration}
  */
 DND5E.itemProperties = {
-  ada: {
-    label: "DND5E.Item.Property.Adamantine",
+  val: {
+    label: "DND5E.Item.Property.Valyrian",
     isPhysical: true
   },
   amm: {
@@ -1317,7 +1301,7 @@ DND5E.validProperties = {
     "mgc"
   ]),
   weapon: new Set([
-    "ada",
+    "val",
     "amm",
     "fin",
     "fir",
@@ -1401,30 +1385,20 @@ preLocalize("lootTypes", { key: "label" });
  * @enum {CurrencyConfiguration}
  */
 DND5E.currencies = {
-  pp: {
-    label: "DND5E.CurrencyPP",
-    abbreviation: "DND5E.CurrencyAbbrPP",
-    conversion: 0.1
-  },
-  gp: {
-    label: "DND5E.CurrencyGP",
-    abbreviation: "DND5E.CurrencyAbbrGP",
+  dp: {
+    label: "DND5E.CurrencyDP",
+    abbreviation: "Dragon",
     conversion: 1
   },
-  ep: {
-    label: "DND5E.CurrencyEP",
-    abbreviation: "DND5E.CurrencyAbbrEP",
-    conversion: 2
-  },
-  sp: {
-    label: "DND5E.CurrencySP",
-    abbreviation: "DND5E.CurrencyAbbrSP",
-    conversion: 10
-  },
-  cp: {
-    label: "DND5E.CurrencyCP",
-    abbreviation: "DND5E.CurrencyAbbrCP",
+  mp: {
+    label: "DND5E.CurrencyMP",
+    abbreviation: "Moon",
     conversion: 100
+  },
+  pp: {
+    label: "DND5E.CurrencyPP",
+    abbreviation: "Penny",
+    conversion: 10000
   }
 };
 preLocalize("currencies", { keys: ["label", "abbreviation"] });
@@ -1439,9 +1413,9 @@ preLocalize("currencies", { keys: ["label", "abbreviation"] });
  * @enum {string}
  */
 DND5E.physicalDamageTypes = {
-  bludgeoning: "DND5E.DamageBludgeoning",
-  piercing: "DND5E.DamagePiercing",
-  slashing: "DND5E.DamageSlashing"
+  blunt: "Blunt",
+  blade: "Blade",
+  projectile: "Projectile"
 };
 preLocalize("physicalDamageTypes", { sort: true });
 
@@ -1467,14 +1441,14 @@ DND5E.damageTypes = {
     icon: "systems/dnd5e/icons/svg/damage/acid.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IQhbKRPe1vCPdh8v"
   },
-  bludgeoning: {
-    label: "DND5E.DamageBludgeoning",
+  blunt: {
+    label: "DND5E.DamageBlunt",
     icon: "systems/dnd5e/icons/svg/damage/bludgeoning.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.39LFrlef94JIYO8m"
   },
-  cold: {
-    label: "DND5E.DamageCold",
+  ice: {
+    label: "DND5E.DamageIce",
     icon: "systems/dnd5e/icons/svg/damage/cold.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4xsFUooHDEdfhw6g"
   },
@@ -1483,23 +1457,18 @@ DND5E.damageTypes = {
     icon: "systems/dnd5e/icons/svg/damage/fire.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.f1S66aQJi4PmOng6"
   },
-  force: {
-    label: "DND5E.DamageForce",
-    icon: "systems/dnd5e/icons/svg/damage/force.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.eFTWzngD8dKWQuUR"
-  },
   lightning: {
     label: "DND5E.DamageLightning",
     icon: "systems/dnd5e/icons/svg/damage/lightning.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9SaxFJ9bM3SutaMC"
   },
-  necrotic: {
-    label: "DND5E.DamageNecrotic",
+  shadow: {
+    label: "DND5E.DamageShadow",
     icon: "systems/dnd5e/icons/svg/damage/acid.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.klOVUV5G1U7iaKoG"
   },
-  piercing: {
-    label: "DND5E.DamagePiercing",
+  projectile: {
+    label: "DND5E.DamageProjectile",
     icon: "systems/dnd5e/icons/svg/damage/piercing.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.95agSnEGTdAmKhyC"
@@ -1514,23 +1483,17 @@ DND5E.damageTypes = {
     icon: "systems/dnd5e/icons/svg/damage/psychic.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.YIKbDv4zYqbE5teJ"
   },
-  radiant: {
-    label: "DND5E.DamageRadiant",
+  light: {
+    label: "DND5E.DamageLight",
     icon: "systems/dnd5e/icons/svg/damage/radiant.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.5tcK9buXWDOw8yHH"
   },
-  slashing: {
-    label: "DND5E.DamageSlashing",
+ blade: {
+    label: "DND5E.DamageBlade",
     icon: "systems/dnd5e/icons/svg/damage/slashing.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.sz2XKQ5lgsdPEJOa"
   },
-  thunder: {
-    label: "DND5E.DamageThunder",
-    icon: "systems/dnd5e/icons/svg/damage/thunder.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.iqsmMHk7FSpiNkQy"
-  }
-};
 patchConfig("damageTypes", "label", { since: "DnD5e 3.0", until: "DnD5e 3.2" });
 preLocalize("damageTypes", { keys: ["label"], sort: true });
 
@@ -2063,52 +2026,52 @@ preLocalize("spellTags", { keys: ["label", "abbr"] });
  * @enum {SpellSchoolConfiguration}
  */
 DND5E.spellSchools = {
-  abj: {
-    label: "DND5E.SchoolAbj",
+  bld: {
+    label: "DND5E.SchoolBld",
     icon: "systems/dnd5e/icons/svg/schools/abjuration.svg",
-    fullKey: "abjuration",
+    fullKey: "Blood Magic",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.849AYEWw9FHD6JNz"
   },
-  con: {
-    label: "DND5E.SchoolCon",
+  sit: {
+    label: "DND5E.SchoolSit",
     icon: "systems/dnd5e/icons/svg/schools/conjuration.svg",
-    fullKey: "conjuration",
+    fullKey: "The Sight",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.TWyKMhZJZGqQ6uls"
   },
-  div: {
-    label: "DND5E.SchoolDiv",
+  pyr: {
+    label: "DND5E.SchoolPyr",
     icon: "systems/dnd5e/icons/svg/schools/divination.svg",
-    fullKey: "divination",
+    fullKey: "Pyrokinesis",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.HoD2MwzmVbMqj9se"
   },
-  enc: {
-    label: "DND5E.SchoolEnc",
+  sha: {
+    label: "DND5E.SchoolSha",
     icon: "systems/dnd5e/icons/svg/schools/enchantment.svg",
-    fullKey: "enchantment",
+    fullKey: "Shadow Binding",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.SehPXk24ySBVOwCZ"
   },
-  evo: {
-    label: "DND5E.SchoolEvo",
+  Vly: {
+    label: "DND5E.SchoolVly",
     icon: "systems/dnd5e/icons/svg/schools/evocation.svg",
-    fullKey: "evocation",
+    fullKey: "Valyrian Magic",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.kGp1RNuxL2SELLRC"
   },
-  ill: {
-    label: "DND5E.SchoolIll",
+  wat: {
+    label: "DND5E.SchoolWat",
     icon: "systems/dnd5e/icons/svg/schools/illusion.svg",
-    fullKey: "illusion",
+    fullKey: "Water Magic",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.smEk7kvVyslFozrB"
   },
   nec: {
     label: "DND5E.SchoolNec",
     icon: "systems/dnd5e/icons/svg/schools/necromancy.svg",
-    fullKey: "necromancy",
+    fullKey: "Necromancy",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.W0eyiV1FBmngb6Qh"
   },
-  trs: {
-    label: "DND5E.SchoolTrs",
+  wrg: {
+    label: "DND5E.SchoolWrg",
     icon: "systems/dnd5e/icons/svg/schools/transmutation.svg",
-    fullKey: "transmutation",
+    fullKey: "Warging",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IYWewSailtmv6qEb"
   }
 };
@@ -2162,9 +2125,9 @@ preLocalize("weaponTypes");
  * @enum {string}
  */
 DND5E.physicalWeaponProperties = {
-  ada: "DND5E.WeaponPropertiesAda",
+  val: "DND5E.WeaponPropertiesVal",
   mgc: "DND5E.WeaponPropertiesMgc",
-  sil: "DND5E.WeaponPropertiesSil"
+  obs: "DND5E.WeaponPropertiesObs"
 };
 preLocalize("physicalWeaponProperties", { sort: true });
 
@@ -2539,40 +2502,22 @@ DND5E.languages = {
     label: "DND5E.LanguagesStandard",
     children: {
       common: "DND5E.LanguagesCommon",
-      dwarvish: "DND5E.LanguagesDwarvish",
-      elvish: "DND5E.LanguagesElvish",
-      giant: "DND5E.LanguagesGiant",
-      gnomish: "DND5E.LanguagesGnomish",
-      goblin: "DND5E.LanguagesGoblin",
-      halfling: "DND5E.LanguagesHalfling",
-      orc: "DND5E.LanguagesOrc"
+      valyrian: "DND5E.LanguagesValyrian",
+      dothraki: "DND5E.LanguagesDothraki",
+      lhazar: "DND5E.LanguagesLhazar",
+      qarth: "DND5E.LanguagesQarth",
+      ashaii: "DND5E.LanguagesAshaii"
     }
   },
   exotic: {
     label: "DND5E.LanguagesExotic",
     children: {
-      aarakocra: "DND5E.LanguagesAarakocra",
-      abyssal: "DND5E.LanguagesAbyssal",
-      celestial: "DND5E.LanguagesCelestial",
-      deep: "DND5E.LanguagesDeepSpeech",
+      giant: "DND5E.LanguagesGiant",
+      demonic: "DND5E.LanguagesDemonic",
       draconic: "DND5E.LanguagesDraconic",
-      gith: "DND5E.LanguagesGith",
-      gnoll: "DND5E.LanguagesGnoll",
-      infernal: "DND5E.LanguagesInfernal",
-      primordial: {
-        label: "DND5E.LanguagesPrimordial",
-        children: {
-          aquan: "DND5E.LanguagesAquan",
-          auran: "DND5E.LanguagesAuran",
-          ignan: "DND5E.LanguagesIgnan",
-          terran: "DND5E.LanguagesTerran"
-        }
-      },
-      sylvan: "DND5E.LanguagesSylvan",
-      undercommon: "DND5E.LanguagesUndercommon"
+      sylvan: "DND5E.LanguagesSylvan"
     }
   },
-  druidic: "DND5E.LanguagesDruidic",
   cant: "DND5E.LanguagesThievesCant"
 };
 preLocalize("languages", { key: "label" });
@@ -2600,8 +2545,8 @@ DND5E.maxAbilityScore = 20;
  * @type {number[]}
  */
 DND5E.CHARACTER_EXP_LEVELS = [
-  0, 300, 900, 2700, 6500, 14000, 23000, 34000, 48000, 64000, 85000, 100000,
-  120000, 140000, 165000, 195000, 225000, 265000, 305000, 355000
+  0, 1200, 3600, 10800, 26000, 56000, 92000, 136000, 192000, 256000, 340000, 400000,
+  480000, 560000, 660000, 780000, 900000, 1024000, 1220000, 1420000
 ];
 
 /**
@@ -2609,7 +2554,7 @@ DND5E.CHARACTER_EXP_LEVELS = [
  * @type {number[]}
  */
 DND5E.CR_EXP_LEVELS = [
-  10, 200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000,
+  1, 50, 250, 400, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000,
   20000, 22000, 25000, 33000, 41000, 50000, 62000, 75000, 90000, 105000, 120000, 135000, 155000
 ];
 
