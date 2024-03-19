@@ -1183,7 +1183,7 @@ preLocalize("featureTypes.supernaturalGift.subtypes", { sort: true });
  */
 DND5E.itemProperties = {
   val: {
-    label: "DND5E.Item.Property.Valyrian",
+    label: "Valyrian",
     isPhysical: true
   },
   amm: {
@@ -1386,17 +1386,17 @@ preLocalize("lootTypes", { key: "label" });
  */
 DND5E.currencies = {
   dp: {
-    label: "DND5E.CurrencyDP",
+    label: "Dragon Coins",
     abbreviation: "Dragon",
     conversion: 1
   },
   mp: {
-    label: "DND5E.CurrencyMP",
+    label: "Moon Coins",
     abbreviation: "Moon",
     conversion: 100
   },
   pp: {
-    label: "DND5E.CurrencyPP",
+    label: "Penny Coins",
     abbreviation: "Penny",
     conversion: 10000
   }
@@ -1442,18 +1442,18 @@ DND5E.damageTypes = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IQhbKRPe1vCPdh8v"
   },
   blunt: {
-    label: "DND5E.DamageBlunt",
+    label: "Blunt",
     icon: "systems/dnd5e/icons/svg/damage/bludgeoning.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.39LFrlef94JIYO8m"
   },
   ice: {
-    label: "DND5E.DamageIce",
+    label: "Ice",
     icon: "systems/dnd5e/icons/svg/damage/cold.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4xsFUooHDEdfhw6g"
   },
   fire: {
-    label: "DND5E.DamageFire",
+    label: "Fire",
     icon: "systems/dnd5e/icons/svg/damage/fire.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.f1S66aQJi4PmOng6"
   },
@@ -1463,12 +1463,12 @@ DND5E.damageTypes = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9SaxFJ9bM3SutaMC"
   },
   shadow: {
-    label: "DND5E.DamageShadow",
+    label: "Shadow",
     icon: "systems/dnd5e/icons/svg/damage/acid.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.klOVUV5G1U7iaKoG"
   },
   projectile: {
-    label: "DND5E.DamageProjectile",
+    label: "Projectile",
     icon: "systems/dnd5e/icons/svg/damage/piercing.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.95agSnEGTdAmKhyC"
@@ -1484,12 +1484,12 @@ DND5E.damageTypes = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.YIKbDv4zYqbE5teJ"
   },
   light: {
-    label: "DND5E.DamageLight",
+    label: "Light",
     icon: "systems/dnd5e/icons/svg/damage/radiant.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.5tcK9buXWDOw8yHH"
   },
  blade: {
-    label: "DND5E.DamageBlade",
+    label: "Blade",
     icon: "systems/dnd5e/icons/svg/damage/slashing.svg",
     isPhysical: true,
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.sz2XKQ5lgsdPEJOa"
@@ -2027,39 +2027,39 @@ preLocalize("spellTags", { keys: ["label", "abbr"] });
  */
 DND5E.spellSchools = {
   bld: {
-    label: "DND5E.SchoolBld",
+    label: "Blood Magic",
     icon: "systems/dnd5e/icons/svg/schools/abjuration.svg",
-    fullKey: "Blood Magic",
+    fullKey: "BloodMagic",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.849AYEWw9FHD6JNz"
   },
   sit: {
-    label: "DND5E.SchoolSit",
+    label: "The Sight",
     icon: "systems/dnd5e/icons/svg/schools/conjuration.svg",
-    fullKey: "The Sight",
+    fullKey: "TheSight",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.TWyKMhZJZGqQ6uls"
   },
   pyr: {
-    label: "DND5E.SchoolPyr",
+    label: "Pyrokinesis",
     icon: "systems/dnd5e/icons/svg/schools/divination.svg",
     fullKey: "Pyrokinesis",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.HoD2MwzmVbMqj9se"
   },
   sha: {
-    label: "DND5E.SchoolSha",
+    label: "Shadow Binding",
     icon: "systems/dnd5e/icons/svg/schools/enchantment.svg",
-    fullKey: "Shadow Binding",
+    fullKey: "Shadowbinding",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.SehPXk24ySBVOwCZ"
   },
   Vly: {
-    label: "DND5E.SchoolVly",
+    label: "Valyrian Magic",
     icon: "systems/dnd5e/icons/svg/schools/evocation.svg",
-    fullKey: "Valyrian Magic",
+    fullKey: "Valyrian",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.kGp1RNuxL2SELLRC"
   },
   wat: {
-    label: "DND5E.SchoolWat",
+    label: "Water Magic",
     icon: "systems/dnd5e/icons/svg/schools/illusion.svg",
-    fullKey: "Water Magic",
+    fullKey: "Water",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.smEk7kvVyslFozrB"
   },
   nec: {
@@ -2069,7 +2069,7 @@ DND5E.spellSchools = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.W0eyiV1FBmngb6Qh"
   },
   wrg: {
-    label: "DND5E.SchoolWrg",
+    label: "Warging",
     icon: "systems/dnd5e/icons/svg/schools/transmutation.svg",
     fullKey: "Warging",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.IYWewSailtmv6qEb"
@@ -2502,18 +2502,18 @@ DND5E.languages = {
     label: "DND5E.LanguagesStandard",
     children: {
       common: "DND5E.LanguagesCommon",
-      valyrian: "DND5E.LanguagesValyrian",
-      dothraki: "DND5E.LanguagesDothraki",
-      lhazar: "DND5E.LanguagesLhazar",
-      qarth: "DND5E.LanguagesQarth",
-      ashaii: "DND5E.LanguagesAshaii"
+      valyrian: "Valyrian",
+      dothraki: "Dothraki",
+      lhazar: "Lhazar",
+      qarth: "Qarth",
+      ashaii: "Ashaii"
     }
   },
   exotic: {
     label: "DND5E.LanguagesExotic",
     children: {
-      giant: "DND5E.LanguagesGiant",
-      demonic: "DND5E.LanguagesDemonic",
+      giant: "Giant",
+      demonic: "Demonic",
       draconic: "DND5E.LanguagesDraconic",
       sylvan: "DND5E.LanguagesSylvan"
     }
