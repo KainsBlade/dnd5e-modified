@@ -63,14 +63,14 @@ DND5E.abilities = {
     defaults: { vehicle: 0 }
   },
   wil: {
-    label: "DND5E.AbilityWil",
+    label: "Wil",
     abbreviation: "Will",
     type: "mental",
     fullKey: "willpower",
     defaults: { vehicle: 0 }
   },
   mag: {
-    label: "DND5E.AbilityMag",
+    label: "Mag",
     abbreviation: "Magic",
     type: "mental",
     fullKey: "magic",
