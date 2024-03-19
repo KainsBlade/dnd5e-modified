@@ -135,14 +135,14 @@ DND5E.skills = {
   },
   ani: {
     label: "DND5E.SkillAni",
-    ability: "wil",
+    ability: "wis",
     fullKey: "animalHandling",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.xb3MCjUvopOU4viE",
     icon: "icons/environment/creatures/horse-brown.webp"
   },
   arc: {
     label: "DND5E.SkillArc",
-    ability: "mag",
+    ability: "int",
     fullKey: "arcana",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.h3bYSPge8IOqne1N",
     icon: "icons/sundries/books/book-embossed-jewel-silver-green.webp"
@@ -156,7 +156,7 @@ DND5E.skills = {
   },
   dec: {
     label: "DND5E.SkillDec",
-    ability: "int",
+    ability: "cha",
     fullKey: "deception",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
     icon: "icons/magic/control/mouth-smile-deception-purple.webp"
@@ -170,14 +170,14 @@ DND5E.skills = {
   },
   ins: {
     label: "DND5E.SkillIns",
-    ability: "int",
+    ability: "wis",
     fullKey: "insight",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.8R5SMbAGbECNgO8z",
     icon: "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
   },
   itm: {
     label: "DND5E.SkillItm",
-    ability: "str",
+    ability: "cha",
     fullKey: "intimidation",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4VHHI2gJ1jEsppfg",
     icon: "icons/skills/social/intimidation-impressing.webp"
@@ -191,21 +191,35 @@ DND5E.skills = {
   },
   med: {
     label: "DND5E.SkillMed",
-    ability: "int",
+    ability: "wis",
     fullKey: "medicine",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.GeYmM7BVfSCAga4o",
     icon: "icons/tools/cooking/mortar-herbs-yellow.webp"
   },
+  nat: {
+    label: "DND5E.SkillNat",
+    ability: "int",
+    fullKey: "nature",
+    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ueMx3uF2PQlcye31",
+    icon: "icons/magic/nature/plant-sprout-snow-green.webp"
+  },
   prc: {
     label: "DND5E.SkillPrc",
-    ability: "wil",
+    ability: "wis",
     fullKey: "perception",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.zjEeHCUqfuprfzhY",
     icon: "icons/magic/perception/eye-ringed-green.webp"
   },
+  prf: {
+    label: "DND5E.SkillPrf",
+    ability: "cha",
+    fullKey: "performance",
+    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.hYT7Z06yDNBcMtGe",
+    icon: "icons/tools/instruments/lute-gold-brown.webp"
+  },
   per: {
     label: "DND5E.SkillPer",
-    ability: "int",
+    ability: "cha",
     fullKey: "persuasion",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4R5H8iIsdFQTsj3X",
     icon: "icons/skills/social/diplomacy-handshake.webp"
@@ -233,7 +247,7 @@ DND5E.skills = {
   },
   sur: {
     label: "DND5E.SkillSur",
-    ability: "con",
+    ability: "wis",
     fullKey: "survival",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.t3EzDU5b9BVAIEVi",
     icon: "icons/magic/fire/flame-burning-campfire-yellow-blue.webp"
