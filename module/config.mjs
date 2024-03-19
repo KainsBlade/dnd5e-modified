@@ -66,7 +66,7 @@ DND5E.abilities = {
     label: "Willpower",
     abbreviation: "Wil",
     type: "mental",
-    fullKey: "willpower",
+    fullKey: "wisdom",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.v3IPyTtqvXqN934s",
     defaults: { vehicle: 0 }
   },
