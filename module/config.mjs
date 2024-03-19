@@ -1317,7 +1317,7 @@ DND5E.validProperties = {
     "mgc"
   ]),
   weapon: new Set([
-    "val",
+    "ada",
     "amm",
     "fin",
     "fir",
@@ -1329,7 +1329,7 @@ DND5E.validProperties = {
     "rch",
     "rel",
     "ret",
-    "obs",
+    "sil",
     "spc",
     "thr",
     "two",
@@ -1401,20 +1401,30 @@ preLocalize("lootTypes", { key: "label" });
  * @enum {CurrencyConfiguration}
  */
 DND5E.currencies = {
-  dp: {
-    label: "Dragon Coins",
-    abbreviation: "Dragon",
+  pp: {
+    label: "DND5E.CurrencyPP",
+    abbreviation: "DND5E.CurrencyAbbrPP",
+    conversion: 0.1
+  },
+  gp: {
+    label: "DND5E.CurrencyGP",
+    abbreviation: "DND5E.CurrencyAbbrGP",
     conversion: 1
   },
-  mp: {
-    label: "Moon Coins",
-    abbreviation: "Moon",
-    conversion: 100
+  ep: {
+    label: "DND5E.CurrencyEP",
+    abbreviation: "DND5E.CurrencyAbbrEP",
+    conversion: 2
   },
-  pp: {
-    label: "Penny Coins",
-    abbreviation: "Penny",
-    conversion: 10000
+  sp: {
+    label: "DND5E.CurrencySP",
+    abbreviation: "DND5E.CurrencyAbbrSP",
+    conversion: 10
+  },
+  cp: {
+    label: "DND5E.CurrencyCP",
+    abbreviation: "DND5E.CurrencyAbbrCP",
+    conversion: 100
   }
 };
 preLocalize("currencies", { keys: ["label", "abbreviation"] });
