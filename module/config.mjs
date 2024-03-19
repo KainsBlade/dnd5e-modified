@@ -62,20 +62,18 @@ DND5E.abilities = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.WzWWcTIppki35YvF",
     defaults: { vehicle: 0 }
   },
-  wis: {
-    label: "DND5E.AbilityWis",
-    abbreviation: "DND5E.AbilityWisAbbr",
+  wil: {
+    label: "Wil",
+    abbreviation: "Will",
     type: "mental",
-    fullKey: "wisdom",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.v3IPyTtqvXqN934s",
+    fullKey: "willpower",
     defaults: { vehicle: 0 }
   },
-  cha: {
-    label: "DND5E.AbilityCha",
-    abbreviation: "DND5E.AbilityChaAbbr",
+  mag: {
+    label: "Mag",
+    abbreviation: "Magic",
     type: "mental",
-    fullKey: "charisma",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.9FyghudYFV5QJOuG",
+    fullKey: "magic",
     defaults: { vehicle: 0 }
   },
   hon: {
@@ -83,7 +81,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityHonAbbr",
     type: "mental",
     fullKey: "honor",
-    defaults: { npc: "cha", vehicle: 0 },
+    defaults: { npc: "wil", vehicle: 0 },
     improvement: false
   },
   san: {
@@ -91,58 +89,23 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilitySanAbbr",
     type: "mental",
     fullKey: "sanity",
-    defaults: { npc: "wis", vehicle: 0 },
+    defaults: { npc: "con", vehicle: 0 },
     improvement: false
   }
 };
 preLocalize("abilities", { keys: ["label", "abbreviation"] });
 
 /**
- * Configure which ability score is used as the default modifier for initiative rolls,
- * when calculating hit points per level and hit dice, and as the default modifier for
- * saving throws to maintain concentration.
- * @enum {string}
+ * Configure which ability score is used as the default modifier for initiative rolls.
+ * @type {string}
  */
-DND5E.defaultAbilities = {
-  initiative: "dex",
-  hitPoints: "con",
-  concentration: "con"
-};
+DND5E.initiativeAbility = "dex";
 
-Object.defineProperties(DND5E, {
-  hitPointsAbility: {
-    get: function() {
-      foundry.utils.logCompatibilityWarning(
-        "DND5E.hitPointsAbility has been deprecated and is now accessible through DND5E.defaultAbilities.hitPoints.",
-        { since: "DnD5e 3.1", until: "DnD5e 3.3" }
-      );
-      return DND5E.defaultAbilities.hitPoints;
-    },
-    set: function(value) {
-      foundry.utils.logCompatibilityWarning(
-        "DND5E.hitPointsAbility has been deprecated and is now accessible through DND5E.defaultAbilities.hitPoints.",
-        { since: "DnD5e 3.1", until: "DnD5e 3.3" }
-      );
-      DND5E.defaultAbilities.hitPoints = value;
-    }
-  },
-  initiativeAbility: {
-    get: function() {
-      foundry.utils.logCompatibilityWarning(
-        "DND5E.initiativeAbility has been deprecated and is now accessible through DND5E.defaultAbilities.initiative.",
-        { since: "DnD5e 3.1", until: "DnD5e 3.3" }
-      );
-      return DND5E.defaultAbilities.initiative;
-    },
-    set: function(value) {
-      foundry.utils.logCompatibilityWarning(
-        "DND5E.initiativeAbility has been deprecated and is now accessible through DND5E.defaultAbilities.initiative.",
-        { since: "DnD5e 3.1", until: "DnD5e 3.3" }
-      );
-      DND5E.defaultAbilities.initiative = value;
-    }
-  }
-});
+/**
+ * Configure which ability score is used when calculating hit points per level.
+ * @type {string}
+ */
+DND5E.hitPointsAbility = "con";
 
 /* -------------------------------------------- */
 
@@ -170,14 +133,14 @@ DND5E.skills = {
   },
   ani: {
     label: "DND5E.SkillAni",
-    ability: "wis",
+    ability: "wil",
     fullKey: "animalHandling",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.xb3MCjUvopOU4viE",
     icon: "icons/environment/creatures/horse-brown.webp"
   },
   arc: {
     label: "DND5E.SkillArc",
-    ability: "int",
+    ability: "mag",
     fullKey: "arcana",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.h3bYSPge8IOqne1N",
     icon: "icons/sundries/books/book-embossed-jewel-silver-green.webp"
@@ -191,7 +154,7 @@ DND5E.skills = {
   },
   dec: {
     label: "DND5E.SkillDec",
-    ability: "cha",
+    ability: "int",
     fullKey: "deception",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
     icon: "icons/magic/control/mouth-smile-deception-purple.webp"
@@ -205,14 +168,14 @@ DND5E.skills = {
   },
   ins: {
     label: "DND5E.SkillIns",
-    ability: "wis",
+    ability: "int",
     fullKey: "insight",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.8R5SMbAGbECNgO8z",
     icon: "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
   },
   itm: {
     label: "DND5E.SkillItm",
-    ability: "cha",
+    ability: "str",
     fullKey: "intimidation",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4VHHI2gJ1jEsppfg",
     icon: "icons/skills/social/intimidation-impressing.webp"
@@ -226,35 +189,21 @@ DND5E.skills = {
   },
   med: {
     label: "DND5E.SkillMed",
-    ability: "wis",
+    ability: "int",
     fullKey: "medicine",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.GeYmM7BVfSCAga4o",
     icon: "icons/tools/cooking/mortar-herbs-yellow.webp"
   },
-  nat: {
-    label: "DND5E.SkillNat",
-    ability: "int",
-    fullKey: "nature",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ueMx3uF2PQlcye31",
-    icon: "icons/magic/nature/plant-sprout-snow-green.webp"
-  },
   prc: {
     label: "DND5E.SkillPrc",
-    ability: "wis",
+    ability: "wil",
     fullKey: "perception",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.zjEeHCUqfuprfzhY",
     icon: "icons/magic/perception/eye-ringed-green.webp"
   },
-  prf: {
-    label: "DND5E.SkillPrf",
-    ability: "cha",
-    fullKey: "performance",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.hYT7Z06yDNBcMtGe",
-    icon: "icons/tools/instruments/lute-gold-brown.webp"
-  },
   per: {
     label: "DND5E.SkillPer",
-    ability: "cha",
+    ability: "int",
     fullKey: "persuasion",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.4R5H8iIsdFQTsj3X",
     icon: "icons/skills/social/diplomacy-handshake.webp"
@@ -282,7 +231,7 @@ DND5E.skills = {
   },
   sur: {
     label: "DND5E.SkillSur",
-    ability: "wis",
+    ability: "con",
     fullKey: "survival",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.t3EzDU5b9BVAIEVi",
     icon: "icons/magic/fire/flame-burning-campfire-yellow-blue.webp"
