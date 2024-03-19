@@ -63,15 +63,15 @@ DND5E.abilities = {
     defaults: { vehicle: 0 }
   },
   wil: {
-    label: "Wil",
-    abbreviation: "Will",
+    label: "Will",
+    abbreviation: "Wil",
     type: "mental",
     fullKey: "willpower",
     defaults: { vehicle: 0 }
   },
   mag: {
-    label: "Mag",
-    abbreviation: "Magic",
+    label: "Magic",
+    abbreviation: "Mag",
     type: "mental",
     fullKey: "magic",
     defaults: { vehicle: 0 }
@@ -1037,10 +1037,6 @@ DND5E.armorClasses = {
   draconic: {
     label: "DND5E.ArmorClassDraconic",
     formula: "13 + @abilities.dex.mod"
-  },
-  unarmoredMonk: {
-    label: "DND5E.ArmorClassUnarmoredMonk",
-    formula: "10 + @abilities.dex.mod + @abilities.wis.mod"
   },
   unarmoredBarb: {
     label: "DND5E.ArmorClassUnarmoredBarbarian",
@@ -2947,7 +2943,7 @@ DND5E.characterFlags = {
     name: "DND5E.FlagsElvenAccuracy",
     hint: "DND5E.FlagsElvenAccuracyHint",
     section: "DND5E.RacialTraits",
-    abilities: ["dex", "int", "wis", "cha"],
+    abilities: ["dex", "int", "wil", "mag"],
     type: Boolean
   },
   halflingLucky: {
