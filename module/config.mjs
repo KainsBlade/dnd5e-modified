@@ -81,7 +81,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityHonAbbr",
     type: "mental",
     fullKey: "honor",
-    defaults: { npc: "cha", vehicle: 0 },
+    defaults: { npc: "wil", vehicle: 0 },
     improvement: false
   },
   san: {
@@ -89,7 +89,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilitySanAbbr",
     type: "mental",
     fullKey: "sanity",
-    defaults: { npc: "wis", vehicle: 0 },
+    defaults: { npc: "con", vehicle: 0 },
     improvement: false
   }
 };
@@ -970,7 +970,7 @@ DND5E.armorClasses = {
   },
   unarmoredMonk: {
     label: "DND5E.ArmorClassUnarmoredMonk",
-    formula: "10 + @abilities.dex.mod + @abilities.wis.mod"
+    formula: "10 + @abilities.dex.mod + @abilities.wil.mod"
   },
   unarmoredBarb: {
     label: "DND5E.ArmorClassUnarmoredBarbarian",
@@ -2738,7 +2738,7 @@ DND5E.characterFlags = {
     name: "DND5E.FlagsElvenAccuracy",
     hint: "DND5E.FlagsElvenAccuracyHint",
     section: "DND5E.RacialTraits",
-    abilities: ["dex", "int", "wis", "cha"],
+    abilities: ["dex", "int", "wil", "mag"],
     type: Boolean
   },
   halflingLucky: {
