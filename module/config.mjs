@@ -1240,8 +1240,8 @@ DND5E.itemProperties = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
     isTag: true
   },
-  sil: {
-    label: "DND5E.Item.Property.Silvered",
+  obs: {
+    label: "Obsidian",
     isPhysical: true
   },
   somatic: {
