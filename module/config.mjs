@@ -1198,8 +1198,8 @@ preLocalize("featureTypes.supernaturalGift.subtypes", { sort: true });
  * @enum {ItemPropertyConfiguration}
  */
 DND5E.itemProperties = {
-  val: {
-    label: "Valyrian",
+  ada: {
+    label: "DND5E.Item.Property.Adamantine",
     isPhysical: true
   },
   amm: {
@@ -1256,8 +1256,8 @@ DND5E.itemProperties = {
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
     isTag: true
   },
-  obs: {
-    label: "Obsidian",
+  sil: {
+    label: "DND5E.Item.Property.Silvered",
     isPhysical: true
   },
   somatic: {
